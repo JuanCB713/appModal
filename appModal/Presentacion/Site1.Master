@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="appModal.Presentacion.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style>
+        @import'/css/style.css';
+    </style>
+    <title>Pagina de Productos</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+        <div id="web">
+            <header id="nav">
+                <h1>Pagina de productos</h1>
+                <table>
+                    <tr>
+                        <td><asp:Hyperlink NavigateUrl="~/Presentacion/frmHome.aspx" runat="server" Text="Inicio" CssClass="nav_h"></asp:Hyperlink></td>
+                        <td><asp:HyperLink NavigateUrl="~/Presentacion/frmProductos.aspx" runat="server" Text="Registro de Productos" CssClass="nav_h"></asp:HyperLink></td>
+                        <td><asp:HyperLink NavigateUrl="~/Presentacion/frmRepeater.aspx" runat="server" Text="Repeater" CssClass="nav_h"></asp:HyperLink></td>
+                    </tr>
+                </table>
+            </header>
+            <form id="form1" runat="server">
+                <article id="content_place">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </article>
+                </form>
+
+            <footer id="fo">
+                <table>
+                    <tr>
+                        <td>Pagina de Productos</td>
+                        <td><%:DateTime.Now.Year %></td>
+                    </tr>
+                </table>
+            </footer>
+
+        </div>
+   
+</body>
+</html>
