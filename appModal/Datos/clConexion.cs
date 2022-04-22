@@ -13,7 +13,7 @@ namespace appModal.Datos
 
         public clConexion()
         {
-            conexion = new SqlConnection("Data Source=.;Initial Catalog=dbProducto;Integrated Security=True");
+            conexion = new SqlConnection("Data Source=SOGAPRRBCFSD540\\SQLEXPRESS;Initial Catalog=dbProductos;Integrated Security=True");
             conexion.Open();
 
         }

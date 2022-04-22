@@ -39,8 +39,8 @@
                       <asp:Label ID="lblMensajes" runat="server" Text=""></asp:Label>
                     <asp:Button ID="btnRegistrarProducto" runat="server" Text="Registrar Producto" CssClass="btn btn-success" OnClick="btnRegistrarProducto_Click" />
             </div>
-                
-
+                <asp:Button ID="btnHola" runat="server" Text="hola Como esta" />
+                <asp:Label ID="Label1" runat="server" Text="no sale"></asp:Label>
         </div>
 
         <div class="form-check mb-3">
