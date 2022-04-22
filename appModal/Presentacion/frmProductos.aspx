@@ -20,10 +20,15 @@
             <label for="Cantidad" class="form-label">Cantidad:</label>
             <asp:TextBox ID="txtCantidad" runat="server" CssClass="form-control" placeholder="Cantidad" TextMode="Multiline"></asp:TextBox>
         </div>
-        
+
         <div class="mb-3">
             <label for="Precio" class="form-label">Precio:</label>
             <asp:TextBox ID="txtPrecio" runat="server" CssClass="form-control" placeholder="Precio" TextMode="Multiline"></asp:TextBox>
+        </div>
+
+        <div class="mb-3">
+            <label for="Precio" class="form-label">Precio:</label>
+            <asp:TextBox ID="txtLugar" runat="server" CssClass="form-control" placeholder="Precio" TextMode="Multiline"></asp:TextBox>
         </div>
 
         <div class="mb-3">
@@ -33,22 +38,22 @@
             <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
 
             <div class="container">
-                <div class ="col-md-border-border-4 col-md-offset-4">
+                <div class="col-md-border-border-4 col-md-offset-4">
                     Imagen Agregada
-                    <asp:FileUpload ID="fImagen" accept=".jpg" runat="server" CssClass="form-control"/>
-                      <asp:Label ID="lblMensajes" runat="server" Text=""></asp:Label>
+                    <asp:FileUpload ID="fImagen" accept=".jpg" runat="server" CssClass="form-control" />
+                    <asp:Label ID="lblMensajes" runat="server" Text=""></asp:Label>
                     <asp:Button ID="btnRegistrarProducto" runat="server" Text="Registrar Producto" CssClass="btn btn-success" OnClick="btnRegistrarProducto_Click" />
+                </div>
+
+
             </div>
-                
 
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember">
+                    Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-
-        <div class="form-check mb-3">
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember">
-                Remember me
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
 </asp:Content>
