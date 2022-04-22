@@ -7,7 +7,7 @@
     <div class="form-control my-5">
 
         <div class="mb-3 mt-3">
-            <label for="Referencia" class="form-label">Referencia:</label>
+            <label for="Referencia" class="form-label">Referenc:</label>
             <asp:TextBox ID="txtReferencia" runat="server" CssClass="form-control" placeholder="Referencia" TextMode="Multiline"></asp:TextBox>
         </div>
 
