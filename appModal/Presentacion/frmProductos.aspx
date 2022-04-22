@@ -7,12 +7,12 @@
     <div class="form-control my-5">
 
         <div class="mb-3 mt-3">
-            <label for="Referencia" class="form-label">Referenc:</label>
+            <label for="Referencia" class="form-label">Referencia:</label>
             <asp:TextBox ID="txtReferencia" runat="server" CssClass="form-control" placeholder="Referencia" TextMode="Multiline"></asp:TextBox>
         </div>
 
         <div class="mb-3">
-            <label for="Nombre Producto" class="form-label">Nombre Producto:</label>
+            <label for="Nombre Producto" class="form-label">Nombre Arroz:</label>
             <asp:TextBox ID="txtNombreProducto" runat="server" CssClass="form-control" placeholder="Nombre Producto" TextMode="Multiline"></asp:TextBox>
         </div>
 
